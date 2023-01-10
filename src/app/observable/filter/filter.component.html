@@ -1,0 +1,79 @@
+<div class="my-1">
+    <h1>Filter</h1>
+    <br>
+    
+
+    
+    <strong>Ex - 01 Filter </strong>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-6">
+            <p class="bg-light border rounded p-2"><strong> All Data</strong></p>
+            <hr>
+            <table class="table">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                </tr>
+                
+                <tr *ngFor="let item of data">
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.gender}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    
+    <strong>Ex - 02 Filter by lenght</strong>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-6">
+            <p class="bg-light border rounded p-2"><strong>Logic: </strong> " item=>item.name.length <= 5 "</p>
+            <hr>
+            <table class="table">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                </tr>
+                
+                <tr *ngFor="let item of dataL">
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.gender}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <strong>Ex - 03 Filter by Gender</strong>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-6">
+            <p class="bg-light border rounded p-2"><strong>Logic: </strong> " item=>item.gender == 'Male' "</p>
+            <hr>
+            <table class="table">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                </tr>
+                
+                <tr *ngFor="let item of dataG">
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.gender}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
